@@ -25,5 +25,5 @@ php bin/console doctrine:schema:create
 ```
 
 That's it, you can now access:
-# The [API backend](https://api---master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh)
-# The [admin frontend](https://master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh)
+* The [API backend](https://api---master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh)
+* The [admin frontend](https://master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh)
