@@ -6,7 +6,7 @@ The Git repository contains the two following applications: `api` and `admin`.
 
 ## Setup
 
-[Create a Platform.sh project](https//:platform.sh/free-trial).
+[Create a Platform.sh project](https://platform.sh/free-trial).
 
 Clone the GitHub repository and push its content to your Platform.sh project:
 
