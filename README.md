@@ -27,3 +27,7 @@ php bin/console doctrine:schema:create
 That's it, you can now access:
 * The [API backend](https://api---master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh)
 * The [admin frontend](https://master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh)
+
+## TODO
+
+You need to manually update the endpoints for your project in `admin/src/App.js` and `api/app/config/parameters_platform.php`. See Issue #1.
