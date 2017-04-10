@@ -28,4 +28,4 @@ if (isset($_ENV['PLATFORM_PROJECT_ENTROPY'])) {
     $container->setParameter('kernel.secret', $_ENV['PLATFORM_PROJECT_ENTROPY']);
 }
 
-$container->setParameter('cors_allow_origin', 'https://master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh');
+$container->setParameter('cors_allow_origin', '*');
