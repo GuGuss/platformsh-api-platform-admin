@@ -9,7 +9,7 @@ build:
 web:
     locations:
         "/":
-            root: "build"
+            root: "build_platform"
             index:
                 - "index.html"
             expires: 300s
@@ -22,10 +22,13 @@ web:
                     allow: true
 
 disk: 1024
-
+mounts:
+  '/build_platform': 'shared:files/build_platform'
+  '/.tmp_platformsh': 'shared:files/tmp_platformsh'
 dependencies:
   nodejs:
     yarn: "*"
+
 
 # The hooks that will be performed when the package is deployed.
 hooks:
@@ -33,3 +36,5 @@ hooks:
       set -e
       yarn install
       npm run build
+    deploy: |
+      npm run buildenvvar
