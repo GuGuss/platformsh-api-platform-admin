@@ -13,17 +13,17 @@ Clone the GitHub repository and push its content to your Platform.sh project:
 ```
 git clone git@github.com:GuGuss/platformsh-api-platform-admin.git
 cd platformsh-api-platform-admin/
-git remote add platform [project-id]@git.eu.platform.sh:[project-id].git
+platform project:set-remote [project-id]
 git push platform master
 ```
 
 SSH to the API remote application and create the database schema:
 
 ```
-ssh [project-id]-master-[string-identifier]--api@ssh.eu.platform.sh
+platform ssh --app api
 php bin/console doctrine:schema:create
 ```
 
 That's it, you can now access:
-* The [API backend](https://api---master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh)
-* The [admin frontend](https://master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh)
+* The API backend
+* The Admin frontend
